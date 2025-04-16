@@ -1,0 +1,10 @@
+<svg width="80" height="50" viewBox="0 0 80 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="bitx-logo-svg">
+    <!-- White 'B' part (Matches the image shape) -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5 H40 V45 H10 V5 Z M18 13 H32 V23 H18 V13 Z M18 27 H32 V37 H18 V27 Z" fill="#FFFFFF"/>
+
+    <!-- Purple extending elements (Matches image positions/colors - using site secondary purple) -->
+    <!-- Vertical Bar -->
+    <rect x="40" y="18" width="10" height="24" rx="2" fill="#C77DFF"/> <!-- Site's secondary purple. Use #A967F7 if you want the image's specific lighter purple -->
+    <!-- Small Square -->
+    <rect x="55" y="25" width="10" height="10" rx="2" fill="#C77DFF"/> <!-- Site's secondary purple. Use #A967F7 if you want the image's specific lighter purple -->
+</svg>

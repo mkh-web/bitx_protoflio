@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-en="BitX - Crafting Digital Excellence" data-lang-ar="BitX - نصنع التميز الرقمي">BitX - Crafting
+        Digital Excellence</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-logo">
+            <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="logo-svg logo-svg-en">
+                <defs>
+                    <filter id="glow-x-preloader" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+                        <feMerge>
+                            <feMergeNode in="coloredBlur" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                <style>
+                    .pl-bitx-text {
+                        font-family: var(--font-primary, sans-serif);
+                        font-size: 28px;
+                        font-weight: 700;
+                        fill: var(--color-text, #F0F0F0);
+                    }
+
+                    .pl-bitx-text-x {
+                        fill: var(--color-accent-bright, #E040FB);
+                    }
+
+                    .pl-bitx-text-x-glow {
+                        filter: url(#glow-x-preloader);
+                    }
+
+                    .pl-dot {
+                        fill: var(--color-text, #F0F0F0);
+                    }
+                </style>
+                <text x="5" y="30" class="pl-bitx-text"> B<tspan dx="-2">i</tspan>
+                    <tspan dx="-2">t</tspan>
+                    <tspan class="pl-bitx-text-x pl-bitx-text-x-glow" dx="0">X</tspan>
+                </text>
+                <circle class="pl-dot" cx="31" cy="13.5" r="3.5" />
+            </svg>
+            <span class="logo-text logo-text-ar"> <span>Bit</span><span class="accent">X</span> </span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <nav class="container">
+            <a href="#hero" class="logo" aria-label="BitX Home">
+                <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="logo-svg logo-svg-en">
+                    <defs>
+                        <filter id="glow-x-header" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                            <feMerge>
+                                <feMergeNode in="coloredBlur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <style>
+                        .hdr-bitx-text {
+                            font-family: var(--font-primary, sans-serif);
+                            font-size: 28px;
+                            font-weight: 700;
+                            fill: var(--color-text, #F0F0F0);
+                            transition: fill 0.3s ease;
+                        }
+
+                        .hdr-bitx-text-x {
+                            fill: var(--color-accent-bright, #E040FB);
+                        }
+
+                        .hdr-bitx-text-x-glow {
+                            filter: url(#glow-x-header);
+                            transition: filter 0.3s ease;
+                        }
+
+                        .hdr-dot {
+                            fill: var(--color-text, #F0F0F0);
+                            transition: fill 0.3s ease;
+                        }
+                    </style>
+                    <text x="5" y="30" class="hdr-bitx-text"> B<tspan dx="-2">i</tspan>
+                        <tspan dx="-2">t</tspan>
+                        <tspan class="hdr-bitx-text-x hdr-bitx-text-x-glow" dx="0">X</tspan>
+                    </text>
+                    <circle class="hdr-dot" cx="31" cy="13.5" r="3.5" />
+                </svg>
+                <span class="logo-text logo-text-ar"> <span>Bit</span><span class="accent">X</span> </span>
+            </a>
+            <ul class="site-nav-links">
+                <li><a href="#hero" class="active" data-lang-en="Home" data-lang-ar="الرئيسية">Home</a></li>
+                <li><a href="#about" data-lang-en="About" data-lang-ar="من نحن">About</a></li>
+                <li><a href="#services" data-lang-en="Services" data-lang-ar="خدماتنا">Services</a></li>
+                <li><a href="#portfolio" data-lang-en="Projects" data-lang-ar="مشاريع">Projects</a></li>
+                <li><a href="#contact" data-lang-en="Contact" data-lang-ar="تواصل معنا">Contact</a></li>
+            </ul>
+            <div class="controls">
+                <div class="lang-switcher-slider" role="radiogroup" aria-label="Language Selection">
+                    <button type="button" role="radio" aria-checked="true" class="lang-option active" id="lang-en"
+                        data-set-lang="en">EN</button>
+                    <button type="button" role="radio" aria-checked="false" class="lang-option" id="lang-ar"
+                        data-set-lang="ar">AR</button>
+                    <span class="slider-thumb" aria-hidden="true"></span>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-background-layer"></div>
+            <div class="hero-content-wrapper container">
+                <div class="hero-content">
+                    <h1 class="hero-headline" data-lang-en="Crafting Digital Excellence."
+                        data-lang-ar="نصنع التميز الرقمي.">Crafting Digital Excellence.</h1>
+                    <p class="hero-subheadline"
+                        data-lang-en="Specialized team delivering creative web solutions with precision and quality."
+                        data-lang-ar="فريق متخصص في تقديم حلول إبداعية وخدمات احترافية بأعلى معايير الجودة والدقة.">
+                        Specialized team delivering creative web solutions with precision and quality.</p>
+                    <a href="#portfolio" class="cta-button" data-lang-en="Explore Our Work"
+                        data-lang-ar="اكتشف أعمالنا">Explore Our Work</a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll down">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M19 12l-7 7-7-7" />
+                </svg>
+            </a>
+        </section>
+
+        <section id="about" class="section-padding" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title" data-lang-en="Who We Are" data-lang-ar="من نحن">Who We Are</h2>
+                <div class="about-blocks">
+                    <div class="about-block" data-aos="fade-up" data-aos-delay="100">
+                        <h3 data-lang-en="About Us" data-lang-ar="من نحن">About Us</h3>
+                        <p data-lang-en="We are an integrated team of experts and specialists in various fields, combining experience and creativity to offer unique solutions that meet our clients' needs and exceed their expectations. BitX was founded to provide professional services in design, development, digital marketing, project management, and various electronic, technical, and analytical services. We are keen to keep pace with the latest global technologies and trends to ensure the delivery of outstanding services."
+                            data-lang-ar="نحن فريق متكامل من الخبراء والمتخصصين في مجالات متنوعة، نجمع بين الخبرة والإبداع لتقديم حلول استثنائية تلبي احتياجات عملائنا وتتجاوز توقعاتهم. تأسس فريق BitX بهدف تقديم خدمات احترافية في مجالات التصميم والتطوير والتسويق الرقمي وإدارة المشاريع ومختلف الخدمات الالكترونية والتقنية والتحليلية الاخرى، ونحرص على مواكبة أحدث التقنيات والاتجاهات العالمية لضمان تقديم خدمات متميزة.">
+                            We are an integrated team...</p>
+                    </div>
+                    <div class="about-block" data-aos="fade-up" data-aos-delay="300">
+                        <h3 data-lang-en="Our Mission" data-lang-ar="رسالتنا">Our Mission</h3>
+                        <p data-lang-en="Our mission is to empower our clients to achieve their goals by providing creative solutions and integrated services that meet their needs and contribute to their growth and development. We commit to the highest standards of quality and precision in all our projects, always striving for continuous improvement and adopting the latest techniques and methods to ensure the best results for our clients."
+                            data-lang-ar="رسالتنا هي تمكين عملائنا من تحقيق أهدافهم من خلال تقديم حلول إبداعية وخدمات متكاملة تلبي احتياجاتهم وتساهم في نموهم وتطورهم. نلتزم بأعلى معايير الجودة والدقة في جميع مشاريعنا، ونسعى دائما للتطوير المستمر وتبني أحدث التقنيات والأساليب لضمان تقديم أفضل النتائج لعملائنا.">
+                            Our mission is to empower...</p>
+                    </div>
+                    <div class="about-block" data-aos="fade-up" data-aos-delay="200">
+                        <h3 data-lang-en="Our Goal" data-lang-ar="هدفنا">Our Goal</h3>
+                        <p data-lang-en="In a rapidly advancing technological world, BitX stands as a trusted partner offering innovative and exceptional solutions. We combine broad experience and limitless creativity to achieve your goals and exceed your expectations."
+                            data-lang-ar="في عالم يتسارع فيه التطور التكنولوجي، يقف فريق BitX كشريك موثوق لتقديم حلول مبتكرة واستثنائية. نحن نجمع بين الخبرة الواسعة والإبداع اللامحدود لتحقيق أهدافكم وتجاوز توقعاتكم.">
+                            In a rapidly advancing...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-padding slanted-bg" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title" data-lang-en="Our Expertise" data-lang-ar="خبراتنا وخدماتنا">Our Expertise
+                </h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon"><svg viewBox="0 0 24 24">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg></div>
+                        <h3 data-lang-en="Web & App Development" data-lang-ar="تطوير المواقع والتطبيقات">Web & App Dev
+                        </h3>
+                        <p data-lang-en="Building high-performance websites and applications using modern tech stacks."
+                            data-lang-ar="نقوم بتصميم وتطوير مواقع الويب والتطبيقات بأحدث التقنيات وأفضل الممارسات لضمان تجربة مستخدم مميزة وأداء عالي.">
+                            Building high-performance websites...</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="service-icon"><svg viewBox="0 0 24 24">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.4-1.4"></path>
+                                <path d="M16 16L8 8l-3 3 7 7 4-4z"></path>
+                            </svg></div>
+                        <h3 data-lang-en="Creative UI/UX Design" data-lang-ar="التصميم الإبداعي وتجربة المستخدم">
+                            Creative UI/UX</h3>
+                        <p data-lang-en="Designing intuitive and engaging user experiences and interfaces."
+                            data-lang-ar="نقدم خدمات تصميم إبداعية تشمل تصميم الهوية البصرية والشعارات والمواد التسويقية بأسلوب عصري ومبتكر.">
+                            Designing intuitive and engaging...</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon"><svg viewBox="0 0 24 24">
+                                <path d="M18 20V10" />
+                                <path d="M12 20V4" />
+                                <path d="M6 20V14" />
+                            </svg></div>
+                        <h3 data-lang-en="Digital Marketing & SEO" data-lang-ar="التسويق الرقمي وSEO">Digital Marketing
+                        </h3>
+                        <p data-lang-en="Integrated marketing strategies to enhance your digital presence and drive growth."
+                            data-lang-ar="استراتيجيات تسويقية متكاملة لتعزيز تواجدكم الرقمي وزيادة الانتشار وتحقيق أهدافكم التسويقية بكفاءة عالية.">
+                            Integrated marketing strategies...</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="service-icon"><svg viewBox="0 0 24 24">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg></div>
+                        <h3 data-lang-en="Data Analysis" data-lang-ar="تحليل البيانات">Data Analysis</h3>
+                        <p data-lang-en="Extracting actionable insights from your data to inform decisions and improve performance."
+                            data-lang-ar="نقدم خدمات تحليل البيانات واستخراج الرؤى والتوصيات لاتخاذ القرارات الصحيحة وتحسين الأداء وتحقيق النتائج المرجوة.">
+                            Extracting actionable insights...</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon"><svg viewBox="0 0 24 24">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg></div>
+                        <h3 data-lang-en="Consulting & Training" data-lang-ar="الاستشارات والتدريب">Consult & Train</h3>
+                        <p data-lang-en="Providing specialized consultations and training to develop skills and improve performance."
+                            data-lang-ar="نقدم استشارات متخصصة وبرامج تدريبية لتطوير المهارات وتحسين الأداء ومواكبة التطورات في مختلف المجالات.">
+                            Providing specialized consultations...</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                        <div class="service-icon"><svg viewBox="0 0 24 24">
+                                <rect x="2" y="16" width="20" height="4" rx="1" />
+                                <rect x="6" y="12" width="12" height="4" rx="1" />
+                                <rect x="10" y="8" width="4" height="4" rx="1" />
+                            </svg></div>
+                        <h3 data-lang-en="Network Solutions" data-lang-ar="حلول الشبكات">Network Solutions</h3>
+                        <p data-lang-en="Installation and configuration of routers, MikroTik, and various network devices."
+                            data-lang-ar="تركيب وبرمجة الروترات والمايكروتيك ومختلف اجهزة الشبكات باسعار غير مسبوقة.">
+                            Installation & configuration...</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon"><svg viewBox="0 0 24 24">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg></div>
+                        <h3 data-lang-en="Database Design" data-lang-ar="تصميم قواعد البيانات">Database Design</h3>
+                        <p data-lang-en="Designing databases and knowledge graphs using SQL, Excel, or other tools as needed."
+                            data-lang-ar="تصميم قواعد بيانات وقواعد معرفة مناسبة لرغبات واعمال عملائنا سواء كانت عن طريق excel, sql او غيره.">
+                            Designing databases...</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+                        <div class="service-icon"><svg viewBox="0 0 24 24">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                            </svg></div>
+                        <h3 data-lang-en="E-Payment (Aden)" data-lang-ar="الدفع الالكتروني (عدن)">E-Payment</h3>
+                        <p data-lang-en="Secure and fast electronic payment solutions tailored for Aden."
+                            data-lang-ar="مع الدفع الإلكتروني في عدن، استمتع بمعاملات مالية آمنة وسريعة، تلبي احتياجاتك العصرية.">
+                            Secure & fast payment...</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-icon"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 18L10 14"></path>
+                                <path d="M12 6V2"></path>
+                                <path d="M18 18l-4-4"></path>
+                                <rect x="2" y="18" width="20" height="4" rx="1"></rect>
+                                <circle cx="12" cy="10" r="4"></circle>
+                            </svg> </div>
+                        <h3 data-lang-en="Game & Visual Dev" data-lang-ar="تطوير الألعاب والمرئيات">Game & Visual Dev
+                        </h3>
+                        <p data-lang-en="Creating immersive games and stunning visual development projects."
+                            data-lang-ar="إنشاء ألعاب غامرة ومشاريع تطوير بصري مذهلة.">Creating immersive games...</p>
+                    </div>
+                </div>
+                <script>document.querySelectorAll('.service-icon svg').forEach(svg => { svg.hasAttribute('fill') || svg.setAttribute('fill', 'none'); svg.hasAttribute('stroke') || svg.setAttribute('stroke', 'currentColor'); svg.hasAttribute('stroke-width') || svg.setAttribute('stroke-width', '1.5'); svg.hasAttribute('stroke-linecap') || svg.setAttribute('stroke-linecap', 'round'); svg.hasAttribute('stroke-linejoin') || svg.setAttribute('stroke-linejoin', 'round'); svg.hasAttribute('viewBox') || svg.setAttribute('viewBox', '0 0 24 24') });</script>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-padding" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title" data-lang-en="Featured Projects" data-lang-ar="مشاريع مختارة">Featured
+                    Projects</h2>
+                <div class="portfolio-grid">
+                    <article class="project-item" data-aos="fade-up" data-aos-delay="100"> <img src="web2.png"
+                            alt="Mockup of IADEN Camp Area website">
+                        <div class="project-overlay">
+                            <h3 data-lang-en="IADEN Camp Area" data-lang-ar="منصة IADN للسفر">IADEN Camp Area</h3>
+                            <p data-lang-en="Travel Platform | React, NestJS" data-lang-ar="منصة سفر | React, NestJS">
+                                Travel Platform | React, NestJS</p>
+                        </div>
+                    </article>
+                    <article class="project-item" data-aos="fade-up" data-aos-delay="200"> <img src="web1.png"
+                            alt="Mockup of Al-Ahqaf Group website">
+                        <div class="project-overlay">
+                            <h3 data-lang-en="Al-Ahqaf Group" data-lang-ar="موقع مجموعة الأحقاف">Al-Ahqaf Group</h3>
+                            <p data-lang-en="Oil Distribution Corporate Site | SEO" data-lang-ar="موقع شركة نفط | SEO">
+                                Oil Distribution Corporate Site | SEO</p>
+                        </div>
+                    </article>
+                    <article class="project-item" data-aos="fade-up" data-aos-delay="300"> <img src="web3.png"
+                            alt="Mockup of MKH Social Media interface">
+                        <div class="project-overlay">
+                            <h3 data-lang-en="MKH Social Media" data-lang-ar="واجهة MKH للتواصل الاجتماعي">MKH Social
+                                Media</h3>
+                            <p data-lang-en="Social UI Concept | React, Framer Motion"
+                                data-lang-ar="تصميم واجهة اجتماعية | React, Framer Motion">Social UI Concept | React,
+                                Framer Motion</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding slanted-bg" data-aos="fade-up">
+            <div class="container contact-container">
+                <h2 class="section-title" data-lang-en="Let's Collaborate" data-lang-ar="لنتعاون معًا">Let's Collaborate
+                </h2>
+                <p data-lang-en="Ready to start your next project? Let's discuss how we can bring your vision to life."
+                    data-lang-ar="جاهز لبدء مشروعك القادم؟ دعنا نناقش كيف يمكننا تحويل رؤيتك إلى حقيقة.">Ready to
+                    start...</p>
+                <form class="contact-form" action="#" method="POST"> <input type="text" name="name"
+                        data-placeholder-en="Your Name" data-placeholder-ar="اسمك" placeholder="Your Name" required
+                        data-aos="fade-up" data-aos-delay="100"> <input type="email" name="email"
+                        data-placeholder-en="Your Email" data-placeholder-ar="بريدك الإلكتروني" placeholder="Your Email"
+                        required data-aos="fade-up" data-aos-delay="150"> <textarea name="message"
+                        data-placeholder-en="Your Message" data-placeholder-ar="رسالتك" placeholder="Your Message"
+                        rows="5" required data-aos="fade-up" data-aos-delay="200"></textarea> <button type="submit"
+                        class="cta-button" data-lang-en="Send Message" data-lang-ar="إرسال الرسالة" data-aos="fade-up"
+                        data-aos-delay="250">Send Message</button> </form>
+                <p class="contact-info" data-lang-en="Contact Info: +967 782 902 986"
+                    data-lang-ar="معلومات التواصل: 967782902986+" data-aos="fade-up" data-aos-delay="300">Contact Info:
+                    +967 782 902 986</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-logo-area">
+                <a href="#hero" class="logo" aria-label="BitX Home">
+                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="logo-svg logo-svg-en">
+                        <defs>
+                            <filter id="glow-x-footer" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <style>
+                            .ftr-bitx-text {
+                                font-family: var(--font-primary, sans-serif);
+                                font-size: 28px;
+                                font-weight: 700;
+                                fill: var(--color-text-muted, #a09cb0);
+                                transition: fill 0.3s ease;
+                            }
+
+                            .ftr-bitx-text-x {
+                                fill: var(--color-accent-bright, #E040FB);
+                                opacity: 0.7;
+                            }
+
+                            .ftr-bitx-text-x-glow {
+                                filter: url(#glow-x-footer);
+                                transition: filter 0.3s ease;
+                            }
+
+                            .ftr-dot {
+                                fill: var(--color-text-muted, #a09cb0);
+                                transition: fill 0.3s ease;
+                            }
+                        </style>
+                        <text x="5" y="30" class="ftr-bitx-text"> B<tspan dx="-2">i</tspan>
+                            <tspan dx="-2">t</tspan>
+                            <tspan class="ftr-bitx-text-x ftr-bitx-text-x-glow" dx="0">X</tspan>
+                        </text>
+                        <circle class="ftr-dot" cx="31" cy="13.5" r="3.5" />
+                    </svg>
+                    <span class="logo-text logo-text-ar">
+                        <span>Bit</span><span class="accent">X</span>
+                    </span>
+                </a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <p>
+                    <span data-lang-en="©" data-lang-ar="©">©</span>
+                    <span id="current-year"></span>
+                    <span data-lang-en=" BitX. All Rights Reserved." data-lang-ar=" BitX. جميع الحقوق محفوظة."> BitX.
+                        All Rights Reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+
+</html>
