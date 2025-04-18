@@ -1,3 +1,7 @@
+@import "tailwindcss";
+
+
+
 *,
 *::before,
 *::after {
@@ -72,7 +76,6 @@ video {
   max-width: 100%;
   height: auto;
   display: block;
-  vertical-align: middle;
 }
 a {
   color: var(--color-secondary);
@@ -508,13 +511,14 @@ p {
   }
 }
 .scroll-down-indicator {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   z-index: 5;
   cursor: pointer;
-  width: 24px;
+  width: 100%;
+  margin-top: 20px;
   height: 40px;
   opacity: 0.6;
   transition: opacity var(--transition-speed-fast) ease;
@@ -570,20 +574,22 @@ p {
 .about-blocks {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: calc(var(--spacing-unit) * 4.5);
+  gap: calc(var(--spacing-unit) * 5.5);
   margin-top: calc(var(--spacing-unit) * 5);
 }
 .about-block {
   background-color: rgba(var(--color-secondary), 0.05);
-  padding: calc(var(--spacing-unit) * 4);
+  padding: 20px;
   border-radius: var(--border-radius);
-  border-left: 5px solid var(--color-primary);
   transition: background-color var(--transition-speed-fast) ease,
     transform var(--transition-speed-fast) ease;
+    
 }
+
 .about-block:hover {
   background-color: rgba(var(--color-secondary), 0.08);
   transform: translateY(-4px);
+
 }
 .about-block h3 {
   color: var(--color-secondary);
@@ -598,7 +604,6 @@ p {
 }
 [dir="rtl"] .about-block {
   border-left: none;
-  border-right: 5px solid var(--color-primary);
   text-align: right;
 }
 .services-grid {
@@ -667,7 +672,7 @@ p {
 }
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
   gap: calc(var(--spacing-unit) * 5);
 }
 .project-item {
@@ -680,6 +685,7 @@ p {
   transition: transform var(--transition-speed-med) var(--ease-out-cubic),
     box-shadow var(--transition-speed-med) var(--ease-out-cubic);
   will-change: transform;
+  
 }
 .project-item:hover {
   transform: translateY(-10px) scale(1.02);
