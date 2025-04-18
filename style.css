@@ -602,6 +602,7 @@ p {
   margin-bottom: 0;
   line-height: 1.7;
 }
+
 [dir="rtl"] .about-block {
   border-left: none;
   text-align: right;
